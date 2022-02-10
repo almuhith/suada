@@ -1,0 +1,585 @@
+@font-face {
+    font-family: aktilight;
+    src: url(vendor/font/AktivGrotesk-Light.ttf);
+}
+@font-face {
+    font-family: aktiregular;
+    src: url(vendor/font/AktivGrotesk-Regular.ttf);
+}
+@font-face {
+    font-family: aktibold;
+    src: url(vendor/font/AktivGrotesk-XBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'aktiregular';
+}
+h1,h2,h3{
+    font-family: 'aktilight';
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 150px 0px;
+}
+.s-header{
+    text-align: center;
+}
+.s-header h2{
+    color: #333;
+    font-size: 40px;
+    font-family: 'aktilight';
+}
+
+
+
+
+header{
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    margin-top: 60px;
+}
+header nav ul{
+    float: right;
+}
+header nav ul li{
+    display: inline-block;
+    align-items: flex-end;
+}
+header nav ul li a{
+    color: #fff;
+    font-family: 'aktibold';
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0px 20px;
+    line-height: 50px;
+    font-size: 13px;
+    cursor: pointer;
+}
+header nav ul li .sign-up{
+    padding: 15px 17px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.hero{
+    height: 100vh;
+    background: url(assets/image/hero.png), linear-gradient(to right,#ff6666,#ff6699);
+    background-repeat: no-repeat;
+    background-size: 500px,100%;
+    background-position: bottom right 12%,center center;
+}
+.hero .container{
+    position: relative;
+    height: 100vh;
+}
+.hero .textarea{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-30%);
+}
+.hero .textarea h2{
+    color: #fff;
+    font-family: 'aktilight';
+    font-weight: lighter;
+    font-size: 50px;
+}
+.hero .textarea .btn-group{
+    margin-top: 40px;
+}
+.hero .textarea .btn-group .single-btn{
+    padding: 14px 23px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    float: left;
+}
+.hero .textarea .btn-group i{
+    color: #fff;
+    font-size: 35px;
+    margin-right: 16px;
+    float: left;
+}
+.hero .textarea .btn-group .single-btn a{
+    font-size: 14px;
+    font-family: 'aktibold';
+    text-transform: uppercase;
+    color: #fff;
+    float: left;
+    margin-top: 10px;
+}
+.hero .textarea .btn-group .bnr{
+    margin-right: 20px;
+}
+.hero ::after{
+
+    content: "";
+    display: table;
+}
+/* Hero_End */
+/* News-Start */
+#news{
+    height: 100px;
+    background: #EBEBEB;
+}
+#news .text{
+    width: 100%;
+    padding: 35px 0px;
+    text-align: center;
+    margin: 0 auto;
+}
+#news .text a{
+    background: linear-gradient(to right, #ff6666,#ff6699);
+    padding: 10px 13px;
+    border-radius: 23px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-flex;
+    font-family: 'aktibold';
+    margin-right: 20px;
+}
+#news .text p{
+    color: #666666;
+    font-family: 'aktiregular';
+    display: inline-flex;
+    margin-top: 10px;
+}
+#news .text p span{
+    color: #ff6666;
+    margin-left: 5px;
+}
+/* News-End */
+/* Why-Should-Start */
+#why{
+    background: url(assets/image/5mobile.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 780px;
+}
+#why .bottom{
+    color: #666666;
+    text-align: center;
+    margin-top: 92px;
+    margin-bottom: 120px;
+}
+#why .bottom i{
+    margin-bottom: 28px;
+    color: #ff6666;
+    font-size: 30px;
+    padding: 14px;
+    border-radius: 50%;
+    border: 2px solid #ff6666;
+}
+#why .bottom h2{
+    font-size: 23px;
+    font-family: 'aktilight';
+    margin-bottom: 30px;
+}
+#why .bottom p{
+    font-size: 15px;
+}
+#why .bottom .single{
+    padding: 0px 20px;
+}
+#why .bottom .left,.right{
+    margin-top: 130px;
+}
+
+/* Work-Start */
+#work{
+    background-color: #333333;
+    background-image: url('assets/image/carv_bg.png');
+    background-repeat: no-repeat
+    ;
+    background-position: bottom;
+}
+#work h2{
+    color: #fff;
+}
+#work img{
+    margin-top: 28px;
+}
+#work .s-header .text{
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+#work .s-header .text p{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'aktiregular';
+}
+#work .single{
+    position: relative;
+    text-align: center;
+    color: #666666;
+    padding: 38px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 98px 15px 160px 15px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+}
+#work .single h2{
+    color: #ff6666;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'aktibold';
+    margin-bottom: 20px;
+}
+#work .single p{
+    font-size: 15px;
+    font-family: 'aktiregular';
+}
+#work .single::after{
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background: #fff;
+    left: 44%;
+    transform: rotate(45deg);
+    bottom: -10px;
+}
+#work .single::before{
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ff6666,#ff6699);
+    left: 44%;
+    bottom: -92px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+}
+#work .col-md-4:first-child .single{
+    transform: translateY(100px);
+}
+#work .col-md-4:last-child .single{
+    transform: translateY(48px);
+}
+/* Work-End */
+/* Track-Start */
+#track .s-header .text{
+    width: 730px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+#track .s-header img{
+    margin-top: 28px;
+}
+#track .s-header .text p{
+    color: #666666;
+    font-size: 15px;
+    font-family: 'aktiregular';
+}
+#track .track{
+    margin-bottom: 100px;
+}
+#track .track .single{
+    text-align: center;
+    margin-top: 145px;
+    padding: 0px 40px;
+    border-right: 2px solid #EBEBEB;
+}
+#track .track .col-md-3:last-child .single{
+    border-right: 0px;
+}
+#track .track .single h2{
+    font-size: 25px;
+    font-family: 'aktiregular';
+    text-align: center;
+    height: 120px;
+    width: 120px;
+    color: #666666;
+    border-top: 8px solid #ff6666;
+    border-left: 8px solid #ff6666;
+    border-bottom: 8px solid #ff6699;
+    border-right: 8px solid #ff6699;
+    border-radius: 50%;
+    padding-top: 36px;
+    margin: 0 auto;
+    border: 8px solid linear-gradient( #ff6666,#ff6699);
+}
+#track .track .single h3{
+    color: #666666;
+    font-family: 'aktilight';
+    font-size: 23px;
+    margin: 30px 0px;
+}
+#track .track .single p{
+    color: #666666;
+    font-family: 'aktiregular';
+    font-size: 15px;
+}
+/* Track-End */
+/* Need-Start */
+#need{
+    background: #333333;
+}
+#need img{
+    margin-top: -254px;
+}
+#need .s-header h2{
+    color:#fff;
+    margin-top: 60px;
+}
+#need .single{
+    margin: 30px 0px;
+}
+#need .single i{
+    color: #ff6666;
+    font-size: 35px;
+    padding: 20px;
+    border: 1px solid #ff6666;
+    border-radius: 50%;
+}
+#need .single h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+}
+#need .single p{
+    color: #fff;
+}
+#need .bottom .right{
+    margin-left: 15px;
+}
+#need .bottom{
+    margin-bottom: 240px;
+}
+/* Need-End */
+/* Love-Start */
+#love img{
+    margin-top: -480px;
+}
+.love .icon i{
+    color: #ff6666;
+    font-size: 35px;
+}
+#love .s-header img{
+    margin-top: 28px;
+}
+#love .s-header .text{
+    width: 780px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+#love .single{
+    padding: 0px 50px 50px 50px;
+    border: 2px solid #EBEBEB;
+    border-radius: 5px;
+    text-align: center;
+    margin: 150px 10px;
+}
+#love .single img{
+    margin-top: -30px;
+}
+#love .single h3{
+    font-size: 23px;
+    font-family: 'aktilight';
+    color: #666666;
+    margin: 25px 0px;
+    text-align: center;
+}
+#love .single p{
+    color: #666666;
+    font-size: 15px;
+    font-family: 'aktiregular';
+    text-align: left;
+}
+#love .single a{
+    display: block;
+    color: #ff6666;
+    font-size: 15px;
+    font-family: 'aktibold';
+    text-align: left;
+    margin-top: 15px;
+}
+#love .icon img{
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding: 5px 20px;
+    margin-top: 5px;
+}
+
+
+#plane{
+    background: #EBEBEB;
+}
+#plane .single{
+    margin: 105px 15px 0px 15px;
+    background: #fff;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+}
+#plane .left{
+    margin-top: 175px;
+}
+#plane .middle{
+    margin-top: 140px;
+}
+#plane .single .header{
+    background: linear-gradient(45deg, #ff6699, #ff6666);
+    padding: 55px;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px 7px 0px 0px;
+}
+#plane .single .header h3{
+    font-size: 30px;
+    font-family: 'aktiregular';
+}
+#plane .single .header p{
+    font-size: 23px;
+    font-family: 'aktilight';
+    margin-top: 5px;
+}
+#plane .single .footer{
+    padding: 55px;
+}
+#plane .single .footer .single-f{
+    margin: 10px 0px;
+    width: 100%;
+}
+#plane .single .footer i{
+    color: #ff6666;
+    padding: 5px;
+    border: 1px solid #ff6666;
+    border-radius: 50%;
+}
+#plane .single .footer .single-f p{
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'aktiregular';
+    color: #666666;
+}
+/* Newsletter-Start */
+#newsletter{
+    background: linear-gradient(to right,#ff6666,#ff6699);
+}
+#newsletter .text-area{
+    margin-top: 88px;
+    margin-left: 60px;
+}
+#newsletter .text-area h2{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'aktilight';
+}
+#newsletter .text-area .btn-group{
+    margin-top: 40px;
+}
+#newsletter .btn-group .single-btn{
+    padding: 14px 23px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    float: left;
+}
+#newsletter .btn-group i{
+    color: #fff;
+    font-size: 35px;
+    margin-right: 16px;
+    float: left;
+}
+#newsletter .btn-group .single-btn a{
+    font-size: 14px;
+    font-family: 'aktibold';
+    text-transform: uppercase;
+    color: #fff;
+    float: left;
+    margin-top: 10px;
+}
+#newsletter .btn-group .bnr{
+    margin-right: 20px;
+}
+/* Footer-Start */
+#footer{
+    background: #333;
+}
+#footer .single-f h6{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'aktibold';
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#footer .single-f p{
+    font-family: 'aktiregular';
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+#footer .single-f input{
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    padding: 15px 130px 15px 15px;
+    border-radius: 22px;
+    position: relative;
+}
+#footer .single-f .btn{
+    display: block;
+    height: 40px;
+    width: 115px;
+    background: linear-gradient(to right,#ff6666,#ff6699);
+    text-align: center;
+    border-radius: 22px;
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 253px;
+}
+#footer .single-f .btn a{
+    font-size: 13px;
+    color: #fff;
+    font-family: 'aktibold';
+    line-height: 40px;
+}
+#footer .single-f .icon{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+#footer .single-f .icon i{
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+}
+#footer .copy{
+    margin-top: 70px;
+}
+#footer .copy img{
+    width: 30px;
+}
+#footer .copy .text{
+    display: inline-block;
+    margin-left: 10px;
+    
+
+}
+#footer .copy .text span{
+    font-size: 15px;
+    font-family: 'aktiregular';
+    color: #fff;
+    display: block;
+}
